@@ -1,12 +1,12 @@
 let name = "Petrus";
 let age = "24";
-let type = []; // put your class/type here
+let type = "1"; // put your class/type here
 
 class typeOfClass {
 	constructor (type){
 	this.type = type
 }
-	atack() {
+	attack() {
     if (this.type === "warrior") {
 		return "using sword" ;
 	} else if (this.type === "mage") {
@@ -14,7 +14,7 @@ class typeOfClass {
 	} else if (this.type === "monk") {
 		return "using martial arts";	
 	} else if (this.type === "ninja") {
-		return "using shurikeen";
+		return "using shuriken";
 	} else { 
 		return "please, select your type"; 
 	}
@@ -22,4 +22,8 @@ class typeOfClass {
 }
 let skill = new typeOfClass(type);
 
-console.log(`the ${type} atack ${skill.atack()} `)
+if (skill.attack() !== "please, select your type") {
+	console.log(`The ${type} attacks ${skill.attack()} `)
+} else {
+	console.log ("please, select your type")
+}
