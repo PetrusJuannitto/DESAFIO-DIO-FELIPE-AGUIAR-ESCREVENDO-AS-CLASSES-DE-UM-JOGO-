@@ -1,6 +1,6 @@
 let name = "Petrus";
 let age = "24";
-let type = "1"; // put your class/type here
+let type = "1"; // put your class/type here (warrior, mage, monk or ninja)
 
 class typeOfClass {
 	constructor (type){
